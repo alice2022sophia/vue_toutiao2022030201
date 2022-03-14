@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <van-nav-bar class="login-in-btn" fixed>
-      <van-button class="home-search" slot="title" type="info" round size="small" icon="search">搜索</van-button>
+      <van-button class="home-search" slot="title" type="info" round size="small" icon="search" to="/search">搜索</van-button>
     </van-nav-bar>
     <van-tabs class="tab-bars" v-model="active" animated swipeable border>
       <van-tab :title="item.name" :key="item.id" v-for="item in channels">

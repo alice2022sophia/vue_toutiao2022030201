@@ -12,7 +12,7 @@
           <span>{{userInfo.name}}</span>
         </div>
         <div class="data-right">
-          <van-button round size="mini" class="data-button">编辑资料</van-button>
+          <van-button round size="mini" class="data-button" to="/user/profile">编辑资料</van-button>
         </div>
       </div>
       <div class="data-stats">
@@ -100,7 +100,6 @@ export default {
       try {
         const { data } = await getUserInfo()
         this.userInfo = data.data
-        console.log(this.userInfo)
       } catch (err) {
         this.$toast('获取用户信息失败!')
       }

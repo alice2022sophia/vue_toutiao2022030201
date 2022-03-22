@@ -114,7 +114,8 @@ export default {
       try {
         await this.$refs.loginFormRef.validate('user')
       } catch (err) {
-        return console.log('手机验证失败', err)
+        return
+        // return console.log('手机验证失败', err)
       }
       this.isCountDownShow = true
       try {

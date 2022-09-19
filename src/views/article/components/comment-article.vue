@@ -93,7 +93,7 @@ export default {
         this.$emit('onLoadedSuccess', data.data)
         this.list.push(...results)
         this.loading = false
-        if (results.length) {
+        if (results.length > 0) {
           this.offset = data.data.last_id
         } else {
           this.finished = true
